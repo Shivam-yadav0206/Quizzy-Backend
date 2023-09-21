@@ -45,7 +45,9 @@ connection();
 
 // app.use(auth);
 
-
+app.get('/', (req,res) => {
+    res.send('Hello on Quizzy backend');
+})
 
 app.get('/',(req,res,next)=>{
     // console.log("HTTP Method ->" + req.method + "URL" + req.url);
