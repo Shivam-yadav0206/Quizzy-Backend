@@ -57,6 +57,6 @@ app.get('/',(req,res,next)=>{
 
 
 //creating a server
-app.listen(port, hostname, function(){
+app.listen(port, function(){
     console.log(`server running http://localhost:${port}`);
 });
