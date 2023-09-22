@@ -15,8 +15,8 @@ import questionRouter from './router/questionRouter.js';
 // const dotenv1 = dotenv;
 const app = express();
 dotenv.config();
-// const { API_PORT } = process.env;
-const port = process.env.PORT || 3000;
+//const { API_PORT } = process.env;
+const port = process.env.PORT || 5000;
 
 
 
@@ -45,9 +45,9 @@ connection();
 
 // app.use(auth);
 
-app.get('/', (req,res) => {
-    res.send('Hello on Quizzy backend');
-})
+// app.get('/', (req,res) => {
+//     res.send('Hello on Quizzy backend');
+// })
 
 app.get('/',(req,res,next)=>{
     // console.log("HTTP Method ->" + req.method + "URL" + req.url);
@@ -57,6 +57,6 @@ app.get('/',(req,res,next)=>{
 
 
 //creating a server
-app.listen(port,function(){
+app.listen(port, hostname, function(){
     console.log(`server running http://localhost:${port}`);
 });
